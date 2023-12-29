@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Changa:wght@200;300;400;500;600;700&family=Gasoek+One&family=Orbitron:wght@400;500;800&family=Poiret+One&family=Silkscreen:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.551);
+    color: white;
+}
+header{
+    background-color: rgb(195, 195, 195);
+    color: rgb(116, 33, 160);
+    font: normal 700 2em 'Silkscreen', Times, serif;
+    text-align: center;
+    height: 150px;
+    padding-top: 20px
+}
+header p{
+    padding: 10px 0px;
+    font: normal BOLD 1.05em 'Poiret One';
+}
+main{
+    text-align: center;
+}
+.button{
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    margin: 50px 20px 20px 20px;
+    border: 5px solid white;
+    font: normal normal 1.2em 'Changa', Verdana, sans-serif;
+}
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.351);
+    color: black;
+    transform: scale(120%);
+    transition: 500ms;
+}
+main a{
+    color:white;
+    text-decoration: none;
+}
