@@ -26,17 +26,111 @@
                     <h3>JAVASCRIPT</h3>
                         <p>Linguagem de Interatividade</p>-->
             <h2>ESTUTURA BÁSICA EM HTML</h2>
-                <code>&lt;!DOCTYPE&gt; html
-                    <br> &lt;html lang="pt-br"&gt;
-                    <br>&lt;head&gt;
-                    <br>&lt;meta charset= "UTF-8"
-                    <br>&lt;/head&gt;
-                    <br>&lt;body&gt;
-                    <p>CONTEUDO DO SITE</p>
-                    <br>&lt;/body&gt;
-                    <br>&lt;/html&gt;</code>
+                <pre>
+                    <code>&lt;!DOCTYPE&gt; html
+                        &lt;html lang="pt-br"&gt;
+                        &lt;head&gt;
+                        &lt;meta charset= "UTF-8"
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        <p>CONTEUDO DO SITE</p>
+                        >&lt;/body&gt;
+                        &lt;/html&gt;</code>
+                </pre>
+            <h2>FORMATAÇÃO DE TEXTO</h2>
+                <h3>HIERARQUIA DE TÍTULOS</h3>
+                        <dl>
+                            <dt>&lt;H1&gt;
+                                <dd>Assunto Principal do Site</dd>
+                            <dt>&lt;H2&gt;
+                                <dd>Sub-tópico do h1</dd>
+                            <dt>&lt;H3&gt;
+                                <dd>Sub-tópico do h2</dd>
+                            <dt>&lt;H4&gt;
+                                <dd>Sub-tópico do h3</dd>
+                            <dt>&lt;H5&gt;
+                                <dd>Sub-tópico do h4</dd>
+                            <dt>&lt;H6&gt;
+                                <dd>Sub-tópico do h5</dd>
+                        </dl>
+                <h3>TAGS de Formatação</h3>
+                <dl>
+                    <dt>STRONG
+                        <dd>Torna o texto em negrito</dd>
+                    <dt>EM
+                        <dd>Dá ênfase no texto, deixa itálico</dd>
+                    <dt>MARK + STYLE
+                        <dd>Marca <mark>texto</mark>, o <mark style="background-color: aqua;">style</mark> muda a cor dele</dd>
+                    <dt>SMALL
+                        <dd>Deixa o texto <small>pequeno</small></dd>
+                    <dt>DEL
+                        <dd>Deixa um risco no <del>texto</del></dd>
+                    <dt>SUP
+                        <dd>Sobre põe o <sup>texto</sup></dd>
+                    <dt>SUB
+                        <dd>Sobpõe o <sub>texto</sub></dd>
+                </dl>
+
+               <h3>TAGS OBSOLETAS</h3>
+                        <p>Procurar no site oficial as tags obsoletas do HTML4 que passaram pro HTML5</p>
+                        <p>Acesse o <a href="https://www.w3.org/TR/2014/REC-html5-20141028/obsolete.html" target="_blank" rel="external">W3C</a></p>
+
+                <h3>CÓDIGO NO TEXTO</h3>
+                    <p><strong>&lt;code&gt;</strong><br>Essa tag é utilizada para colocarmos um código visível ao leitor, porém, ela não é bem estruturada ou não se preocupa com o visual, por isso utilizamos também a tag <strong>&lt;pre&gt;</strong></p>
+                
+                    <h3>CITAÇÕES</h3>
+                    <h4>CITAÇÃO SIMPLES</h4>
+                        <p>Para citar a frase de alguém no texto, utilizamos a tag <strong>&lt;q&gt;</strong>, por exemplo: <q>Eu sou o caminho, a verdade e a vida!</q></p>
+
+                    <h4>CITAÇÃO ELABORADA</h4>
+                        <p>Uma citação elaborada usamos a tag <strong>&lt;blockquote&gt;</strong> já que ela desloca o texto dando uma maior enfase a frase citada. Por exemplo: <blockquote><q>Eu sou o caminho a verdade e a vida</q></blockquote>Ou seja, tem um caráter box-level </p>
+
+                <h3>ABREVIAÇÕES</h3>
+                    <p>Quando passamos o mouse em cima e aparece uma mensagem oculta? sabe como fazer isso? É simples, basta utilizar a tag <strong>&lt;abbr&gt;</strong><br>Por exemplo: <abbr title="Viu como é fácil?">PASSE O MOUSE AQUI</abbr></p>
+
+                <h3>TEXTO INVERTIDO</h3>
+                    <p>Para deixarmos as pessoas um pouco confusas e inverter o texto, podemos utilizar a tag <strong>&lt;bdo dir="rtl"&gt;</strong></p>
+                <h3>LISTAS</h3>
+                    <p>Utilizamos listas para tudo nesta vida, portanto, saber como colocá-las em <strong>HTML5</strong> é de extrema importância</p>
+                    <h4>Listas Ordenadas</h4>
+                        <p>Utilizamos a tag <strong>&lt;ol&gt;</strong> para as listas ordenadas e <strong>&lt;li&gt;</strong> para o itens</p>
+                        
+                    <h4>Listas Não-Ordenadas</h4>
+                        <p>Utilizamos a tag <strong>&lt;ul&gt;</strong> para as listas não-ordenadas e <strong>&lt;li&gt;</strong> para o itens</p>
+                    
+                    <h4>Listas de Definições</h4>
+                        <p> Utilizamos a tag <strong>&lt;dl&gt; a tag <strong>&lt;dt&gt;</strong> para os itens e a tag <strong>&lt;dd&gt;</strong> para a definição</strong></p>
             <h2>CARACTERES ESPECIAIS</h2>
                     <p>Para colocar caracteres especiais no site, não podemos utilizar eles na linha de código, mas devemos utilizar certos "comandos" para conseguir torná-los visíveis para os visitantes.</p>
+
+
+            <h2>LINKS</h2>
+                <h3>ÂNCORAS</h3>
+                    <p>Para nos referimos a um link ou emplementarmos um link à um determinado elemento, utilizado a tag <strong>&lt;a href=""&gt;</strong></p>
+                    <h4>Especificações</h4>
+                        <p>Para uma <strong>PÁGINA INTERNA</strong>, utlizamos a tag dentro do href <strong>rel="prev/next"</strong></p>
+                        <p>Para destinarmos se a página será aberta em outra aba ou na própria aba, utilizamos dentro do href também tag <strong>target="_blank/_self..."</strong></p>
+                        <p>Para um página que não temos confiança, utilizamos a relação <strong>rel="nofollow"</strong></p>
+                <h3>LINKS PARA DOWNLOAD</h3>
+                    <p>1.Primeiro criamos uma âncora com o caminho até o arquivo no computador.</p>
+                    <p>2.Depois, colocar depois do href, download="nome do arquivo" type="mediatype".</p>
+                    <p>2.Encontrar o mediatype do arquivo acessando o site <a href="" target="_blank" rel="external">IANA.ORG</a>.</p>
+                    <p>2..</p>
+                        <p><strong>MEDIATYPES MAIS USADOS</strong></p>
+                        <ul class="listdownload">
+                            <li>application/zip
+                            <li>text/html
+                            <li>text/css
+                            <li>text/javascript
+                            <li>video/mp4
+                            <li>video/H264
+                            <li>video/JPEG
+                            <li>audio/aac
+                            <li>audio/mpeg
+                            <li>jant/aff
+                            <li>image/jpeg
+                            <li>image/jpg
+                        </ul>
                     <table>
                         <tbody>
                             <tr>
@@ -174,23 +268,39 @@
                         </tbody>
                     </table>
             <p>Caso queira saber sobre mais símbolos, procure o site <a href="https://www.w3schools.com/html/html_charset.asp" target="_blank" rel="external">W3SCHOOLS</a></p>
+                    <h3>EMOJIS</h3>
+                        <p>Para adicionar emojis, devemos colocar o seguinte código &#x(ID do Emoji)</p>
+                        <strong><p>SITE PARA PEGAR O ID DOS EMOJIS</p></strong>
+                        <ul>
+                            <li><a href="https://emojipedia.org" target="_blank" rel="external">Emojipedia</a>
+                        </ul>
             <h2>IMAGENS</h2>
+                <h3>FORMATOS DE IMAGEM</h3>
+                    <p><strong>PNG:</strong> Imagens com formato ou fundo transparente.</p>
+                    <p><strong>JPEG ou JPG:</strong> Imagens grande com uma compactação melhor</p>
                     <p>Site para pegar <strong>IMAGENS</strong> sem direito autoral</p>
                         <ul>
                             <li><a href="https://unsplash.com/pt-br" target="_blank" rel="external">Unsplash</a>
                             <li><a href="https://www.pexels.com/pt-br/" target="_blank" rel="external">Pexels</a>
                             <li><a href="https://br.freepik.com" target="_blank" rel="external">Freepick</a>
                         </ul>
-                        <h3>FORMATOS DE IMAGEM</h3>
-                        <p><strong>PNG:</strong> Imagens com formato ou fundo transparente.</p>
-                        <p><strong>JPEG ou JPG:</strong> Imagens grande com uma compactação melhor</p>
+
+                <h3>IMAGENS QUE SE ADAPTAM SOZINHAS</h3>
+                    <picture>
+                        <source media="(max-width:750px)" srcset="imagens/foto-p.png">
+                        <source media="(max-width:1050px)" srcset="imagens/foto-m.png">
+                        <img src="imagens/foto-g.png" alt="" width="80%">
+                    </picture>
+                    <p>Para fazer isso, temos uma longa jornada, mas em suma, você precisa ter a imagem em 3 tamanhos, PEQUENA, MÉDIA e GRANDE.</p>
                 <h3>FAVICONS</h3>
                         <p>EMOJI do site</p>
+                        <p>Se localiza ao lado do título do site</p>
                             <h4>SITES PARA PEGAR FAVICONS</h4>
                                 <ul>
                                     <li><a href="https://www.favicon.cc" target="_blank" rel="external">Favicon.cc</a>
-                                    <li><a href="https://favicon.io" target="_blank" rel="external">faviconico.io</a>
+                                    <li><a href="https://favicon.io" target="_blank" rel="external">Faviconico.io</a>
                                 </ul>
+
         </article>
             
                 
