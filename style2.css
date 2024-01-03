@@ -50,6 +50,9 @@ main{
 table{
     border: 3px solid black;
 }
+.code1{
+    color: #76aebf;
+}
 /* ORDEM DOS ESTILOS
 main h1
 h1 p
@@ -151,7 +154,12 @@ table{
 table th{
     padding: 10px;
 }
-    
+footer p{
+    font: normal bolder 2em 'Silkscreen', Times, serif;
+    background-color: #C3C3C3;
+    color: rebeccapurple;
+    text-align: center;
+}
 /*CRIAR UM INDENT PARA CADA PARAGRAFO DE SEU RESPECTIVO TÍTULO*/
 
 
