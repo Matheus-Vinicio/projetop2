@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Changa:wght@200;300;400;500;600;700&family=Gasoek+One&family=Orbitron:wght@400;500;800&family=Poiret+One&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Changa:wght@200;300;400;500;600;700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gasoek+One&family=Orbitron:wght@400;500;800&family=Poiret+One&family=Silkscreen:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -59,11 +59,47 @@ h3 p
 table
 main a
 main ul*/
-table{
-    margin: auto;
-}
+
 main{
     padding: 20px;
+}
+main h1{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-image: linear-gradient(to bottom,#4a707c, transparent );
+    text-align: center;
+    font: normal normal 2em 'Bungee',Times, serif;
+    margin-bottom: 30px;    
+}
+main h2{
+    font: normal normal 1.8em 'Bungee',Times, serif; 
+    background-color: rgba(225, 147, 68, 0.68);
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: inset 8px -12px 15px 4px rgba(0, 0, 0, 0.308);
+    text-align: center;
+}
+main h3{
+    font: normal normal 1.6em 'Bungee',Times, serif; 
+    text-indent: 15px;
+    color: #252525;
+    background-color: rgba(255, 255, 255, 0.399);
+    height: 70px;
+    margin: 40px;
+    width: auto;
+    box-shadow: 8px -12px 15px 4px rgba(0, 0, 0, 0.378);
+    border-radius: 20px;
+}
+.indenttitle{
+    text-indent: 45px;
+}
+main h4{
+    font: normal normal 1.4em 'Bungee',Times, serif; 
+    text-indent: 15px;
+}
+main p{
+    line-height: 25px;
+    font: normal normal 1.2em 'Exo 2', Verdana, sans-serif;
 }
 main a{
     color: rgb(203, 140, 140);
@@ -80,32 +116,36 @@ main a:hover{
 main a::after{
     content: "\1F517";
 }
-main ul{
+main dl{
     padding:5px; 
     list-style-position: inside; 
+    font: normal bolder 1.2em 'Poiret One',Times, serif; 
 }
 main .listdownload{
     columns: 2;
 }
+
 ul li{
     padding: 2px;
+    font: normal bolder 1.2em 'Poiret One',Times, serif; 
+    color: rgb(203, 140, 140);
 }
 main dt{
     font-weight: bolder;
-    color: rgb(161, 41, 225);
+    color: rgb(203, 140, 140);
 }
 main dd{
     text-indent: 20px;
+    
 }
+table{
+    margin: auto;
+}
+table th{
+    padding: 10px;
+}
+    
 /*CRIAR UM INDENT PARA CADA PARAGRAFO DE SEU RESPECTIVO TÍTULO*/
-main h2{
-    text-indent: 5px;
-}
-main h3{
-    text-indent: 10px;
-}
-main h4{
-    text-indent: 15px;
-}
+
 
 

@@ -26,6 +26,7 @@
                     <h3>JAVASCRIPT</h3>
                         <p>Linguagem de Interatividade</p>-->
             <h2>ESTUTURA BÁSICA EM HTML</h2>
+            <p>Podemos observar como é o código sendo utilizado: </p>
                 <pre>
                     <code>&lt;!DOCTYPE&gt; html
                         &lt;html lang="pt-br"&gt;
@@ -78,7 +79,9 @@
                 <h3>CÓDIGO NO TEXTO</h3>
                     <p><strong>&lt;code&gt;</strong><br>Essa tag é utilizada para colocarmos um código visível ao leitor, porém, ela não é bem estruturada ou não se preocupa com o visual, por isso utilizamos também a tag <strong>&lt;pre&gt;</strong></p>
                 
-                    <h3>CITAÇÕES</h3>
+                    <div class="indenttitle">
+                        <h3 class="indenttitle">CITAÇÕES</h3>
+                    </div>
                     <h4>CITAÇÃO SIMPLES</h4>
                         <p>Para citar a frase de alguém no texto, utilizamos a tag <strong>&lt;q&gt;</strong>, por exemplo: <q>Eu sou o caminho, a verdade e a vida!</q></p>
 
@@ -99,8 +102,8 @@
                         <p>Utilizamos a tag <strong>&lt;ul&gt;</strong> para as listas não-ordenadas e <strong>&lt;li&gt;</strong> para o itens</p>
                     
                     <h4>Listas de Definições</h4>
-                        <p> Utilizamos a tag <strong>&lt;dl&gt; a tag <strong>&lt;dt&gt;</strong> para os itens e a tag <strong>&lt;dd&gt;</strong> para a definição</strong></p>
-            <h2>CARACTERES ESPECIAIS</h2>
+                        <p> Utilizamos a tag <strong>&lt;dl&gt;</strong> a tag <strong>&lt;dt&gt;</strong> para os itens e a tag <strong>&lt;dd&gt;</strong> para a definição</strong></p>
+            <h4 class="indenttitle">CARACTERES ESPECIAIS</h4>
                     <p>Para colocar caracteres especiais no site, não podemos utilizar eles na linha de código, mas devemos utilizar certos "comandos" para conseguir torná-los visíveis para os visitantes.</p>
 
 
@@ -136,8 +139,8 @@
                             <tr>
                                 <th>Caractere</th>
                                 <th>Nome/Descrição</th>
-                                <th>Entidade por nome</th>
-                                <th>Entidade por número</th>
+                                <th>Escrita</th>
+                                <th>Representação</th>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
@@ -171,7 +174,7 @@
                             </tr>
                             <tr>
                                 <td>&amp;</td>
-                                <td>ampersand/ E comercial/And</td>
+                                <td>E comercial/And</td>
                                 <td>&amp;amp;</td>
                                 <td>&amp;</td>
                             </tr>
@@ -274,7 +277,7 @@
                         <ul>
                             <li><a href="https://emojipedia.org" target="_blank" rel="external">Emojipedia</a>
                         </ul>
-            <h2>IMAGENS</h2>
+            <h2>MÍDIA</h2>
                 <h3>FORMATOS DE IMAGEM</h3>
                     <p><strong>PNG:</strong> Imagens com formato ou fundo transparente.</p>
                     <p><strong>JPEG ou JPG:</strong> Imagens grande com uma compactação melhor</p>
@@ -291,7 +294,25 @@
                         <source media="(max-width:1050px)" srcset="imagens/foto-m.png">
                         <img src="imagens/foto-g.png" alt="" width="80%">
                     </picture>
-                    <p>Para fazer isso, temos uma longa jornada, mas em suma, você precisa ter a imagem em 3 tamanhos, PEQUENA, MÉDIA e GRANDE.</p>
+                    <p>1.Para fazer isso, temos uma longa jornada, mas em suma, você precisa ter a imagem em 3 tamanhos, PEQUENA, MÉDIA e GRANDE.</p>
+                    <p>2.Depois, adicionamos a tag &lt;picture&gt;</p>
+                    <p>3.Dentro dessa tag, colocamos a imagem padrão por meio da tag &lt;img src="" alt=""&gt;</p>
+                    <p>4.Em seguida, colocamos a tag &lt;source:media&gt; e colocamos as imagens menores</p>
+                        <h4>Especificações</h4>
+                            <p>Para sempre colocar a imagem menor primeiro, depois a maior, sendo de forma crescente.</p>
+                
+                <h3>ÁUDIO</h3>
+                    <p>Para adicionarmos audio em nosso site, podemos utilizar de diversas coisas, mas difente das imagens, precisamos colcoar iversos tipos de arquivo do mesmo audio para ser compatíveis com todos os navegadores. Por exemplo</p>
+                    <p>1.Colocamos a tag &lt;audio preload="metadata" controls&gt;</p>
+                    <p>2.Depois colocamos a tag &lt;source:media:type&gt; isso para todos os tipos de arquivo de audio que tem</p>
+                    <p><strong>OBS:</strong>É DO MESMO AUDIO</p>
+                <h3>VÍDEO</h3>
+                    <p>Repetir o processo do áudio</p>
+                    <p>Caso queira uma capa no vídeo, utilizar a tag &lt;poster &gt;</p>
+                    <p><strong>SEMPRE TESTAR TODOS OS FORMATOS DE VÍDEO</strong></p>
+                    <h4>VIDEO EXTERNO</h4>
+                        <p>Usar a tag iframe</p>    
+                        <p>O VIMEO é um exemplo de uma plataforma de videos externos privada.</p>    
                 <h3>FAVICONS</h3>
                         <p>EMOJI do site</p>
                         <p>Se localiza ao lado do título do site</p>
